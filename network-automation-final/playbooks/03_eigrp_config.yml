@@ -1,0 +1,38 @@
+---
+- name: Configure EIGRP routing
+  hosts: routers
+  gather_facts: no
+
+  vars:
+    eigrp_as: 100
+
+    loopback_map:
+      router1: 10.10.101
+      router2: 10.10.102
+
+  tasks:
+    - name: Configure loopback1
+      ios_config:
+        parents: interface Loopback1
+        lines:
+          - ip address {{ loopback_map[inventory_hostname] }}.1 255.255.255.255
+
+    - name: Configure loopback2
+      ios_config:
+        parents: interface Loopback2
+        lines:
+          - ip address {{ loopback_map[inventory_hostname] }}.2 255.255.255.255
+
+    - name: Configure Loopback3
+      ios_config:
+        parents: interface Loopback3
+        lines:
+          - ip address {{ loopback_map[inventory_hostname] }}.3 255.255.255.255
+
+    - name: Configure EIGRP AS 100
+      ios_config:
+        parents: router eigrp {{ eigrp_as }}
+        lines:
+          - network 10.10.99.0 0.0.0.3
+          - network {{ loopback_map[inventory_hostname] }}.0 0.0.0.255
+          - no auto-summary

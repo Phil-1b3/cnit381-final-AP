@@ -1,0 +1,15 @@
+---
+- name: Configure network services
+  hosts: routers:switches
+  gather_facts: no
+
+  tasks:
+    - name: Configure NTP
+      ios_config:
+        lines:
+          - ntp server 8.8.8.8
+
+    - name: Configure logging buffer
+      ios_config:
+        lines:
+          - logging buffered 16384

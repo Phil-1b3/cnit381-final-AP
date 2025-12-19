@@ -1,0 +1,15 @@
+---
+- name: Apply base configuration
+  hosts: routers:switches
+  gather_facts: no
+
+  tasks:
+    - name: Set hostname
+      ios_config:
+        lines:
+          - hostname {{ inventory_hostname }}
+
+    - name: Configure MOTD banner
+      ios_config:
+        lines:
+          - banner motd ^Authorized Access Only – CNIT 381 Final Project^

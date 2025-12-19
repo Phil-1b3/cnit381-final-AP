@@ -1,0 +1,1853 @@
+2025-12-17 21:24:47,644 p=54587 u=acarr n=ansible | ERROR! the playbook: playbooks/01_verify_connectivity.yml could not be found
+2025-12-17 21:25:35,240 p=54671 u=acarr n=ansible | ERROR! the playbook: ./playbooks/01_verify_connectivity.yml could not be found
+2025-12-17 21:29:12,454 p=55009 u=acarr n=ansible | PLAY [Verify connectivity to network devices] ******************************************
+2025-12-17 21:29:12,526 p=55009 u=acarr n=ansible | TASK [Run show version to verify SSH connectivity] *************************************
+2025-12-17 21:29:13,399 p=55009 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:29:13,399 p=55009 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:29:13,406 p=55034 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:29:43,406 p=55034 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:29:43,416 p=55009 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:29:43,417 p=55009 u=acarr n=ansible | PLAY RECAP *****************************************************************************
+2025-12-17 21:29:43,417 p=55009 u=acarr n=ansible | switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:29:43,517 p=55034 u=acarr n=ansible | shutdown complete
+2025-12-17 21:31:18,908 p=55163 u=acarr n=ansible | PLAY [Apply base configuration] ********************************************************
+2025-12-17 21:31:18,927 p=55163 u=acarr n=ansible | TASK [Set hostname] ********************************************************************
+2025-12-17 21:31:19,916 p=55163 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:31:19,917 p=55163 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:31:19,927 p=55196 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:31:19,928 p=55163 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:31:19,929 p=55163 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:31:19,939 p=55201 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:31:19,953 p=55163 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:31:19,953 p=55163 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:31:19,957 p=55202 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:31:49,927 p=55196 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:31:49,939 p=55201 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:31:49,944 p=55163 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:31:49,948 p=55163 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:31:49,957 p=55202 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:31:49,962 p=55163 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:31:49,963 p=55163 u=acarr n=ansible | PLAY RECAP *****************************************************************************
+2025-12-17 21:31:49,963 p=55163 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:31:49,963 p=55163 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:31:49,964 p=55163 u=acarr n=ansible | switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:31:50,063 p=55196 u=acarr n=ansible | shutdown complete
+2025-12-17 21:31:50,063 p=55201 u=acarr n=ansible | shutdown complete
+2025-12-17 21:31:50,063 p=55202 u=acarr n=ansible | shutdown complete
+2025-12-17 21:32:47,356 p=55390 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************
+2025-12-17 21:32:47,371 p=55390 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************
+2025-12-17 21:32:47,383 p=55390 u=acarr n=ansible | fatal: [router1]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'loopback_base' is undefined. 'loopback_base' is undefined\n\nThe error appears to be in '/home/acarr/Documents/cnit381-final-AP/network-automation-final/playbooks/03_eigrp_config.yml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Configure loopback interfaces\n      ^ here\n"}
+2025-12-17 21:32:47,388 p=55390 u=acarr n=ansible | fatal: [router2]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'loopback_base' is undefined. 'loopback_base' is undefined\n\nThe error appears to be in '/home/acarr/Documents/cnit381-final-AP/network-automation-final/playbooks/03_eigrp_config.yml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Configure loopback interfaces\n      ^ here\n"}
+2025-12-17 21:32:47,389 p=55390 u=acarr n=ansible | PLAY RECAP *****************************************************************************
+2025-12-17 21:32:47,389 p=55390 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:32:47,389 p=55390 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:34:33,808 p=55526 u=acarr n=ansible | PLAY [Configure VLANs and trunking] ****************************************************
+2025-12-17 21:34:33,818 p=55526 u=acarr n=ansible | TASK [Create VLANs] ********************************************************************
+2025-12-17 21:34:34,691 p=55526 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:34:34,692 p=55526 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:34:34,697 p=55546 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:35:04,697 p=55546 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:35:04,714 p=55526 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:35:04,717 p=55526 u=acarr n=ansible | PLAY RECAP *****************************************************************************
+2025-12-17 21:35:04,718 p=55526 u=acarr n=ansible | switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:35:04,816 p=55546 u=acarr n=ansible | shutdown complete
+2025-12-17 21:35:26,895 p=55701 u=acarr n=ansible | PLAY [Configure network services] ******************************************************
+2025-12-17 21:35:26,916 p=55701 u=acarr n=ansible | TASK [Configure NTP] *******************************************************************
+2025-12-17 21:35:27,921 p=55701 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:35:27,921 p=55701 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:35:27,922 p=55701 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:35:27,923 p=55701 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:35:27,929 p=55729 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:35:27,931 p=55732 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:35:27,964 p=55701 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:35:27,964 p=55701 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:35:27,970 p=55735 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:35:57,929 p=55729 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:35:57,931 p=55732 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:35:57,948 p=55701 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:35:57,950 p=55701 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:35:57,970 p=55735 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:35:57,974 p=55701 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:35:57,976 p=55701 u=acarr n=ansible | PLAY RECAP *****************************************************************************
+2025-12-17 21:35:57,976 p=55701 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:35:57,976 p=55701 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:35:57,976 p=55701 u=acarr n=ansible | switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:35:58,075 p=55729 u=acarr n=ansible | shutdown complete
+2025-12-17 21:35:58,075 p=55732 u=acarr n=ansible | shutdown complete
+2025-12-17 21:35:58,076 p=55735 u=acarr n=ansible | shutdown complete
+2025-12-17 21:36:21,340 p=55835 u=acarr n=ansible | PLAY [Backup device configurations] ****************************************************
+2025-12-17 21:36:21,358 p=55835 u=acarr n=ansible | TASK [Get running configuration] *******************************************************
+2025-12-17 21:36:22,314 p=55835 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:36:22,315 p=55835 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:36:22,325 p=55868 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:36:22,331 p=55835 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:36:22,331 p=55835 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:36:22,341 p=55866 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:36:22,366 p=55835 u=acarr n=ansible | network_os is set to ios
+2025-12-17 21:36:22,366 p=55835 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-17 21:36:22,374 p=55871 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-17 21:36:52,325 p=55868 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:36:52,334 p=55835 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:36:52,340 p=55866 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:36:52,349 p=55835 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:36:52,374 p=55871 u=acarr n=ansible | command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-12-17 21:36:52,379 p=55835 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2025-12-17 21:36:52,381 p=55835 u=acarr n=ansible | PLAY RECAP *****************************************************************************
+2025-12-17 21:36:52,381 p=55835 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:36:52,381 p=55835 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:36:52,381 p=55835 u=acarr n=ansible | switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-17 21:36:52,480 p=55868 u=acarr n=ansible | shutdown complete
+2025-12-17 21:36:52,480 p=55866 u=acarr n=ansible | shutdown complete
+2025-12-17 21:36:52,480 p=55871 u=acarr n=ansible | shutdown complete
+2025-12-18 17:28:07,289 p=138405 u=acarr n=ansible | ERROR! the playbook: /playbooks/01_verify_connectivity.yml could not be found
+2025-12-18 17:28:44,818 p=138509 u=acarr n=ansible | PLAY [Verify connectivity to network devices] ******************************************************************************************************************************************************************
+2025-12-18 17:28:44,827 p=138509 u=acarr n=ansible | TASK [Run show version to verify SSH connectivity] *************************************************************************************************************************************************************
+2025-12-18 17:28:45,678 p=138509 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:28:45,678 p=138509 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:28:45,685 p=138535 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:28:45,696 p=138535 u=acarr n=p=138535 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:28:46,548 p=138535 u=acarr n=p=138535 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 17:28:47,657 p=138509 u=acarr n=ansible | ok: [switch1]
+2025-12-18 17:28:47,660 p=138509 u=acarr n=ansible | TASK [Print show version output] *******************************************************************************************************************************************************************************
+2025-12-18 17:28:48,522 p=138509 u=acarr n=ansible | ok: [switch1] => {
+    "msg": "Cisco IOS XE Software, Version 16.09.05\nCisco IOS Software [Fuji], Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2020 by Cisco Systems, Inc.\nCompiled Thu 30-Jan-20 18:17 by mcpre\n\n\nCisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.\nAll rights reserved.  Certain components of Cisco IOS-XE software are\nlicensed under the GNU General Public License (\"GPL\") Version 2.0.  The\nsoftware code licensed under GPL Version 2.0 is free software that comes\nwith ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such\nGPL code under the terms of GPL Version 2.0.  For more details, see the\ndocumentation or \"License Notice\" file accompanying the IOS-XE software,\nor the applicable URL provided on the flyer accompanying the IOS-XE\nsoftware.\n\n\nROM: IOS-XE ROMMON\nBOOTLDR: CAT3K_CAA Boot Loader (CAT3K_CAA-HBOOT-M) Version 4.66, RELEASE SOFTWARE (P)\n\nS1 uptime is 58 minutes\nUptime for this control processor is 1 hour, 0 minutes\nSystem returned to ROM by Power Failure or Unknown at 17:47:52 CST Sun Dec 14 2025\nSystem image file is \"flash:cat3k_caa-universalk9.16.09.05.SPA.bin\"\nLast reload reason: Power Failure or Unknown\n\n\n\nThis product contains cryptographic features and is subject to United\nStates and local country laws governing import, export, transfer and\nuse. Delivery of Cisco cryptographic products does not imply\nthird-party authority to import, export, distribute or use encryption.\nImporters, exporters, distributors and users are responsible for\ncompliance with U.S. and local country laws. By using this product you\nagree to comply with applicable laws and regulations. If you are unable\nto comply with U.S. and local laws, return this product immediately.\n\nA summary of U.S. laws governing Cisco cryptographic products may be found at:\nhttp://www.cisco.com/wwl/export/crypto/tool/stqrg.html\n\nIf you require further assistance please contact us by sending email to\nexport@cisco.com.\n\n\nTechnology Package License Information: \n\n------------------------------------------------------------------------------\nTechnology-package                                     Technology-package\nCurrent                        Type                       Next reboot  \n------------------------------------------------------------------------------\nipservicesk9        \tSmart License                 \t ipservicesk9        \nNone                \tSubscription Smart License    \t None                          \n\n\nSmart Licensing Status: UNREGISTERED/EVAL MODE\n\ncisco WS-C3650-24PS (MIPS) processor (revision K0) with 832395K/6147K bytes of memory.\nProcessor board ID FDO1952Q1HF\n2 Virtual Ethernet interfaces\n28 Gigabit Ethernet interfaces\n2048K bytes of non-volatile configuration memory.\n4194304K bytes of physical memory.\n252000K bytes of Crash Files at crashinfo:.\n1611414K bytes of Flash at flash:.\n0K bytes of WebUI ODM Files at webui:.\n\nBase Ethernet MAC Address          : 00:35:1a:be:15:80\nMotherboard Assembly Number        : 73-15899-05\nMotherboard Serial Number          : FDO19521QCU\nModel Revision Number              : K0\nMotherboard Revision Number        : B0\nModel Number                       : WS-C3650-24PS\nSystem Serial Number               : FDO1952Q1HF\n\n\nSwitch Ports Model              SW Version        SW Image              Mode   \n------ ----- -----              ----------        ----------            ----   \n*    1 28    WS-C3650-24PS      16.9.5            CAT3K_CAA-UNIVERSALK9 BUNDLE \n\n\nConfiguration register is 0x142 (will be 0x102 at next reload)"
+}
+2025-12-18 17:28:48,531 p=138509 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:28:48,531 p=138509 u=acarr n=ansible | switch1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:28:48,630 p=138535 u=acarr n=ansible | shutdown complete
+2025-12-18 17:29:38,694 p=138660 u=acarr n=ansible | PLAY [Apply base configuration] ********************************************************************************************************************************************************************************
+2025-12-18 17:29:38,710 p=138660 u=acarr n=ansible | TASK [Set hostname] ********************************************************************************************************************************************************************************************
+2025-12-18 17:29:39,689 p=138660 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:29:39,689 p=138660 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:29:39,690 p=138660 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:29:39,690 p=138660 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:29:39,699 p=138691 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:29:39,699 p=138690 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:29:39,709 p=138691 u=acarr n=p=138691 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:29:39,710 p=138690 u=acarr n=p=138690 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:29:39,729 p=138660 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:29:39,729 p=138660 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:29:39,735 p=138694 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:29:39,747 p=138694 u=acarr n=p=138694 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:29:40,344 p=138691 u=acarr n=p=138691 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:29:40,345 p=138690 u=acarr n=p=138690 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:29:40,560 p=138694 u=acarr n=p=138694 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 17:29:42,331 p=138660 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 17:29:42,332 p=138660 u=acarr n=ansible | changed: [router2]
+2025-12-18 17:29:42,702 p=138660 u=acarr n=ansible | changed: [switch1]
+2025-12-18 17:29:42,761 p=138660 u=acarr n=ansible | changed: [router1]
+2025-12-18 17:29:42,770 p=138660 u=acarr n=ansible | TASK [Configure MOTD banner] ***********************************************************************************************************************************************************************************
+2025-12-18 17:29:44,382 p=138660 u=acarr n=ansible | changed: [router2]
+2025-12-18 17:29:44,409 p=138660 u=acarr n=ansible | changed: [router1]
+2025-12-18 17:29:44,952 p=138660 u=acarr n=ansible | changed: [switch1]
+2025-12-18 17:29:45,008 p=138660 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:29:45,008 p=138660 u=acarr n=ansible | router1                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:29:45,008 p=138660 u=acarr n=ansible | router2                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:29:45,008 p=138660 u=acarr n=ansible | switch1                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:29:45,106 p=138691 u=acarr n=ansible | shutdown complete
+2025-12-18 17:29:45,107 p=138694 u=acarr n=ansible | shutdown complete
+2025-12-18 17:29:45,107 p=138690 u=acarr n=ansible | shutdown complete
+2025-12-18 17:32:17,680 p=139007 u=acarr n=ansible | PLAY [Verify connectivity to network devices] ******************************************************************************************************************************************************************
+2025-12-18 17:32:17,690 p=139007 u=acarr n=ansible | TASK [Run show version to verify SSH connectivity] *************************************************************************************************************************************************************
+2025-12-18 17:32:18,612 p=139007 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:32:18,613 p=139007 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:32:18,620 p=139029 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:32:18,629 p=139029 u=acarr n=p=139029 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:32:19,487 p=139029 u=acarr n=p=139029 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 17:32:20,534 p=139007 u=acarr n=ansible | ok: [switch1]
+2025-12-18 17:32:20,546 p=139007 u=acarr n=ansible | TASK [Print show version output] *******************************************************************************************************************************************************************************
+2025-12-18 17:32:21,444 p=139007 u=acarr n=ansible | ok: [switch1] => {
+    "msg": "Cisco IOS XE Software, Version 16.09.05\nCisco IOS Software [Fuji], Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)\nTechnical Support: http://www.cisco.com/techsupport\nCopyright (c) 1986-2020 by Cisco Systems, Inc.\nCompiled Thu 30-Jan-20 18:17 by mcpre\n\n\nCisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.\nAll rights reserved.  Certain components of Cisco IOS-XE software are\nlicensed under the GNU General Public License (\"GPL\") Version 2.0.  The\nsoftware code licensed under GPL Version 2.0 is free software that comes\nwith ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such\nGPL code under the terms of GPL Version 2.0.  For more details, see the\ndocumentation or \"License Notice\" file accompanying the IOS-XE software,\nor the applicable URL provided on the flyer accompanying the IOS-XE\nsoftware.\n\n\nROM: IOS-XE ROMMON\nBOOTLDR: CAT3K_CAA Boot Loader (CAT3K_CAA-HBOOT-M) Version 4.66, RELEASE SOFTWARE (P)\n\nswitch1 uptime is 1 hour, 1 minute\nUptime for this control processor is 1 hour, 4 minutes\nSystem returned to ROM by Power Failure or Unknown at 17:47:52 CST Sun Dec 14 2025\nSystem image file is \"flash:cat3k_caa-universalk9.16.09.05.SPA.bin\"\nLast reload reason: Power Failure or Unknown\n\n\n\nThis product contains cryptographic features and is subject to United\nStates and local country laws governing import, export, transfer and\nuse. Delivery of Cisco cryptographic products does not imply\nthird-party authority to import, export, distribute or use encryption.\nImporters, exporters, distributors and users are responsible for\ncompliance with U.S. and local country laws. By using this product you\nagree to comply with applicable laws and regulations. If you are unable\nto comply with U.S. and local laws, return this product immediately.\n\nA summary of U.S. laws governing Cisco cryptographic products may be found at:\nhttp://www.cisco.com/wwl/export/crypto/tool/stqrg.html\n\nIf you require further assistance please contact us by sending email to\nexport@cisco.com.\n\n\nTechnology Package License Information: \n\n------------------------------------------------------------------------------\nTechnology-package                                     Technology-package\nCurrent                        Type                       Next reboot  \n------------------------------------------------------------------------------\nipservicesk9        \tSmart License                 \t ipservicesk9        \nNone                \tSubscription Smart License    \t None                          \n\n\nSmart Licensing Status: UNREGISTERED/EVAL MODE\n\ncisco WS-C3650-24PS (MIPS) processor (revision K0) with 832395K/6147K bytes of memory.\nProcessor board ID FDO1952Q1HF\n2 Virtual Ethernet interfaces\n28 Gigabit Ethernet interfaces\n2048K bytes of non-volatile configuration memory.\n4194304K bytes of physical memory.\n252000K bytes of Crash Files at crashinfo:.\n1611414K bytes of Flash at flash:.\n0K bytes of WebUI ODM Files at webui:.\n\nBase Ethernet MAC Address          : 00:35:1a:be:15:80\nMotherboard Assembly Number        : 73-15899-05\nMotherboard Serial Number          : FDO19521QCU\nModel Revision Number              : K0\nMotherboard Revision Number        : B0\nModel Number                       : WS-C3650-24PS\nSystem Serial Number               : FDO1952Q1HF\n\n\nSwitch Ports Model              SW Version        SW Image              Mode   \n------ ----- -----              ----------        ----------            ----   \n*    1 28    WS-C3650-24PS      16.9.5            CAT3K_CAA-UNIVERSALK9 BUNDLE \n\n\nConfiguration register is 0x142 (will be 0x102 at next reload)"
+}
+2025-12-18 17:32:21,453 p=139007 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:32:21,453 p=139007 u=acarr n=ansible | switch1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:32:21,553 p=139029 u=acarr n=ansible | shutdown complete
+2025-12-18 17:33:09,193 p=139192 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 17:33:09,209 p=139192 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 17:33:10,129 p=139192 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:33:10,130 p=139192 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:33:10,136 p=139225 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:33:10,144 p=139225 u=acarr n=p=139225 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:33:10,152 p=139192 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:33:10,152 p=139192 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:33:10,158 p=139228 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:33:10,167 p=139228 u=acarr n=p=139228 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:33:10,745 p=139225 u=acarr n=p=139225 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:33:10,746 p=139228 u=acarr n=p=139228 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:33:13,133 p=139192 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 17:33:13,133 p=139192 u=acarr n=ansible | changed: [router2]
+2025-12-18 17:33:13,384 p=139192 u=acarr n=ansible | changed: [router1]
+2025-12-18 17:33:13,393 p=139192 u=acarr n=ansible | TASK [Configure EIGRP AS 100] **********************************************************************************************************************************************************************************
+2025-12-18 17:33:15,309 p=139192 u=acarr n=ansible | changed: [router2]
+2025-12-18 17:33:15,365 p=139192 u=acarr n=ansible | changed: [router1]
+2025-12-18 17:33:15,404 p=139192 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:33:15,404 p=139192 u=acarr n=ansible | router1                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:33:15,404 p=139192 u=acarr n=ansible | router2                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:33:15,503 p=139228 u=acarr n=ansible | shutdown complete
+2025-12-18 17:33:15,503 p=139225 u=acarr n=ansible | shutdown complete
+2025-12-18 17:40:49,638 p=139908 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 17:40:49,652 p=139908 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 17:40:50,539 p=139908 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:40:50,540 p=139908 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:40:50,546 p=139935 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:40:50,555 p=139908 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:40:50,555 p=139908 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:40:50,556 p=139935 u=acarr n=p=139935 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:40:50,562 p=139938 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:40:50,571 p=139938 u=acarr n=p=139938 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:40:51,166 p=139935 u=acarr n=p=139935 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:40:51,167 p=139938 u=acarr n=p=139938 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:40:52,671 p=139908 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.102.1 255.255.255.255\r\nip address 10.10.102.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nrouter2(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:40:52,803 p=139908 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.102.1 255.255.255.255\r\nip address 10.10.102.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nR1(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:40:52,809 p=139908 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:40:52,810 p=139908 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:40:52,810 p=139908 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:40:52,906 p=139938 u=acarr n=ansible | shutdown complete
+2025-12-18 17:40:52,908 p=139935 u=acarr n=ansible | shutdown complete
+2025-12-18 17:41:45,450 p=140042 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 17:41:45,464 p=140042 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 17:41:46,396 p=140042 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:41:46,396 p=140042 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:41:46,399 p=140042 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:41:46,400 p=140042 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:41:46,404 p=140077 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:41:46,408 p=140078 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:41:46,414 p=140077 u=acarr n=p=140077 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:41:46,415 p=140078 u=acarr n=p=140078 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:41:46,991 p=140077 u=acarr n=p=140077 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:41:46,991 p=140078 u=acarr n=p=140078 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:41:48,481 p=140042 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.102.1 255.255.255.255\r\nip address 10.10.102.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nrouter2(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:41:48,690 p=140042 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.101.1 255.255.255.255\r\nip address 10.10.101.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nR1(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:41:48,696 p=140042 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:41:48,696 p=140042 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:41:48,697 p=140042 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:41:48,792 p=140078 u=acarr n=ansible | shutdown complete
+2025-12-18 17:41:48,794 p=140077 u=acarr n=ansible | shutdown complete
+2025-12-18 17:43:54,038 p=140338 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 17:43:54,051 p=140338 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 17:43:55,104 p=140338 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:43:55,104 p=140338 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:43:55,106 p=140338 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:43:55,107 p=140338 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:43:55,116 p=140368 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:43:55,118 p=140371 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:43:55,125 p=140368 u=acarr n=p=140368 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:43:55,129 p=140371 u=acarr n=p=140371 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:43:55,692 p=140371 u=acarr n=p=140371 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:43:55,702 p=140368 u=acarr n=p=140368 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:43:57,296 p=140338 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.102.1 255.255.255.255\r\nip address 10.10.102.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nrouter2(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:43:57,395 p=140338 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.101.1 255.255.255.255\r\nip address 10.10.101.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nR1(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:43:57,399 p=140338 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:43:57,400 p=140338 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:43:57,400 p=140338 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:43:57,498 p=140371 u=acarr n=ansible | shutdown complete
+2025-12-18 17:43:57,499 p=140368 u=acarr n=ansible | shutdown complete
+2025-12-18 17:45:24,474 p=140627 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 17:45:24,488 p=140627 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 17:45:25,387 p=140627 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:45:25,388 p=140627 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:45:25,394 p=140656 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:45:25,399 p=140627 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:45:25,399 p=140627 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:45:25,404 p=140656 u=acarr n=p=140656 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:45:25,409 p=140659 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:45:25,418 p=140659 u=acarr n=p=140659 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:45:26,012 p=140656 u=acarr n=p=140656 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:45:26,015 p=140659 u=acarr n=p=140659 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:45:27,576 p=140627 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.102.1 255.255.255.255\r\nip address 10.10.102.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nrouter2(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:45:27,691 p=140627 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.101.1 255.255.255.255\r\nip address 10.10.101.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nR1(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:45:27,696 p=140627 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:45:27,696 p=140627 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:45:27,697 p=140627 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:45:27,794 p=140656 u=acarr n=ansible | shutdown complete
+2025-12-18 17:45:27,795 p=140659 u=acarr n=ansible | shutdown complete
+2025-12-18 17:46:12,452 p=140791 u=acarr n=ansible | PLAY [Configure VLANs and trunking] ****************************************************************************************************************************************************************************
+2025-12-18 17:46:12,462 p=140791 u=acarr n=ansible | TASK [Create VLANs] ********************************************************************************************************************************************************************************************
+2025-12-18 17:46:13,337 p=140791 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:46:13,337 p=140791 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:46:13,343 p=140820 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:46:13,354 p=140820 u=acarr n=p=140820 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:46:14,179 p=140820 u=acarr n=p=140820 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 17:46:16,906 p=140791 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 17:46:16,907 p=140791 u=acarr n=ansible | changed: [switch1]
+2025-12-18 17:46:16,916 p=140791 u=acarr n=ansible | TASK [Configure trunk to Router1] ******************************************************************************************************************************************************************************
+2025-12-18 17:46:18,637 p=140791 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "module_stderr": "switchport mode trunk\r\nswitchport mode trunk\r\n      ^\r\n% Invalid input detected at '^' marker.\r\n\r\nswitch1(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:46:18,643 p=140791 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:46:18,643 p=140791 u=acarr n=ansible | switch1                    : ok=1    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:46:18,741 p=140820 u=acarr n=ansible | shutdown complete
+2025-12-18 17:46:35,992 p=140908 u=acarr n=ansible | PLAY [Configure network services] ******************************************************************************************************************************************************************************
+2025-12-18 17:46:36,009 p=140908 u=acarr n=ansible | TASK [Configure NTP] *******************************************************************************************************************************************************************************************
+2025-12-18 17:46:37,018 p=140908 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:46:37,019 p=140908 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:46:37,021 p=140908 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:46:37,021 p=140908 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:46:37,027 p=140944 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:46:37,030 p=140946 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:46:37,037 p=140944 u=acarr n=p=140944 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:46:37,041 p=140946 u=acarr n=p=140946 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:46:37,052 p=140908 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:46:37,052 p=140908 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:46:37,060 p=140949 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:46:37,067 p=140949 u=acarr n=p=140949 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:46:37,601 p=140944 u=acarr n=p=140944 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:46:37,630 p=140949 u=acarr n=p=140949 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:46:37,894 p=140946 u=acarr n=p=140946 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 17:46:39,395 p=140908 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 17:46:39,396 p=140908 u=acarr n=ansible | changed: [router2]
+2025-12-18 17:46:39,550 p=140908 u=acarr n=ansible | changed: [router1]
+2025-12-18 17:46:39,929 p=140908 u=acarr n=ansible | changed: [switch1]
+2025-12-18 17:46:39,939 p=140908 u=acarr n=ansible | TASK [Configure logging buffer] ********************************************************************************************************************************************************************************
+2025-12-18 17:46:41,608 p=140908 u=acarr n=ansible | changed: [router2]
+2025-12-18 17:46:41,613 p=140908 u=acarr n=ansible | changed: [router1]
+2025-12-18 17:46:42,098 p=140908 u=acarr n=ansible | changed: [switch1]
+2025-12-18 17:46:42,129 p=140908 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:46:42,129 p=140908 u=acarr n=ansible | router1                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:46:42,129 p=140908 u=acarr n=ansible | router2                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:46:42,129 p=140908 u=acarr n=ansible | switch1                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:46:42,228 p=140944 u=acarr n=ansible | shutdown complete
+2025-12-18 17:46:42,228 p=140949 u=acarr n=ansible | shutdown complete
+2025-12-18 17:46:42,228 p=140946 u=acarr n=ansible | shutdown complete
+2025-12-18 17:46:56,324 p=141068 u=acarr n=ansible | PLAY [Backup device configurations] ****************************************************************************************************************************************************************************
+2025-12-18 17:46:56,341 p=141068 u=acarr n=ansible | TASK [Get running configuration] *******************************************************************************************************************************************************************************
+2025-12-18 17:46:57,309 p=141068 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:46:57,309 p=141068 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:46:57,309 p=141068 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:46:57,310 p=141068 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:46:57,313 p=141068 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:46:57,313 p=141068 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:46:57,317 p=141106 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:46:57,317 p=141104 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:46:57,322 p=141109 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:46:57,325 p=141106 u=acarr n=p=141106 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:46:57,329 p=141104 u=acarr n=p=141104 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:46:57,331 p=141109 u=acarr n=p=141109 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:46:57,992 p=141106 u=acarr n=p=141106 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:46:57,995 p=141109 u=acarr n=p=141109 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:46:58,188 p=141104 u=acarr n=p=141104 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 17:46:59,307 p=141068 u=acarr n=ansible | ok: [router2]
+2025-12-18 17:46:59,513 p=141068 u=acarr n=ansible | ok: [router1]
+2025-12-18 17:46:59,865 p=141068 u=acarr n=ansible | ok: [switch1]
+2025-12-18 17:46:59,877 p=141068 u=acarr n=ansible | TASK [Save configuration to file] ******************************************************************************************************************************************************************************
+2025-12-18 17:47:01,380 p=141068 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "checksum": "8cebd9ec3646d14c79306471b295f3420642ade6", "msg": "Destination directory backups does not exist"}
+2025-12-18 17:47:01,381 p=141068 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "checksum": "5e22fdb959bd3cf8c0ab69c0142007cd6dcbd625", "msg": "Destination directory backups does not exist"}
+2025-12-18 17:47:01,381 p=141068 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "checksum": "cc256a9ab65e9df53e50e044ae291874efe1e37f", "msg": "Destination directory backups does not exist"}
+2025-12-18 17:47:01,383 p=141068 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:47:01,383 p=141068 u=acarr n=ansible | router1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:47:01,384 p=141068 u=acarr n=ansible | router2                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:47:01,384 p=141068 u=acarr n=ansible | switch1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:47:01,482 p=141106 u=acarr n=ansible | shutdown complete
+2025-12-18 17:47:01,482 p=141109 u=acarr n=ansible | shutdown complete
+2025-12-18 17:47:01,483 p=141104 u=acarr n=ansible | shutdown complete
+2025-12-18 17:50:56,566 p=141605 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 17:50:56,566 p=141605 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 17:50:56,566 p=141605 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 17:50:56,570 p=141605 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 17:50:57,240 p=141605 u=acarr n=ansible | PLAY [Backup device configurations] ****************************************************************************************************************************************************************************
+2025-12-18 17:50:57,257 p=141605 u=acarr n=ansible | TASK [Get running configuration] *******************************************************************************************************************************************************************************
+2025-12-18 17:50:58,242 p=141605 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:50:58,242 p=141605 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:50:58,254 p=141632 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:50:58,261 p=141605 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:50:58,261 p=141605 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:50:58,265 p=141605 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:50:58,265 p=141605 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:50:58,267 p=141632 u=acarr n=p=141632 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:50:58,270 p=141638 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:50:58,274 p=141635 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:50:58,278 p=141638 u=acarr n=p=141638 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 17:50:58,282 p=141635 u=acarr n=p=141635 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:50:58,836 p=141638 u=acarr n=p=141638 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 17:50:58,846 p=141635 u=acarr n=p=141635 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 17:50:59,116 p=141632 u=acarr n=p=141632 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 17:51:00,177 p=141605 u=acarr n=ansible | ok: [router2]
+2025-12-18 17:51:00,341 p=141605 u=acarr n=ansible | ok: [router1]
+2025-12-18 17:51:00,777 p=141605 u=acarr n=ansible | ok: [switch1]
+2025-12-18 17:51:00,788 p=141605 u=acarr n=ansible | TASK [Save configuration to file] ******************************************************************************************************************************************************************************
+2025-12-18 17:51:02,290 p=141605 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "checksum": "8cebd9ec3646d14c79306471b295f3420642ade6", "msg": "Destination directory backups does not exist"}
+2025-12-18 17:51:02,291 p=141605 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "checksum": "5e22fdb959bd3cf8c0ab69c0142007cd6dcbd625", "msg": "Destination directory backups does not exist"}
+2025-12-18 17:51:02,293 p=141605 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "checksum": "cc256a9ab65e9df53e50e044ae291874efe1e37f", "msg": "Destination directory backups does not exist"}
+2025-12-18 17:51:02,296 p=141605 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:51:02,296 p=141605 u=acarr n=ansible | router1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:51:02,296 p=141605 u=acarr n=ansible | router2                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:51:02,296 p=141605 u=acarr n=ansible | switch1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:51:02,395 p=141638 u=acarr n=ansible | shutdown complete
+2025-12-18 17:51:02,395 p=141635 u=acarr n=ansible | shutdown complete
+2025-12-18 17:51:02,395 p=141632 u=acarr n=ansible | shutdown complete
+2025-12-18 17:51:18,248 p=141868 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 17:51:18,248 p=141868 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 17:51:18,248 p=141868 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 17:51:18,253 p=141868 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 17:51:18,981 p=141868 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 17:51:18,995 p=141868 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 17:51:19,008 p=141868 u=acarr n=ansible | fatal: [router1]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'loopback_base' is undefined. 'loopback_base' is undefined\n\nThe error appears to be in '/home/acarr/Documents/cnit381-final-AP/network-automation-final/playbooks/03_eigrp_config.yml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Configure loopback interfaces\n      ^ here\n"}
+2025-12-18 17:51:19,013 p=141868 u=acarr n=ansible | fatal: [router2]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'loopback_base' is undefined. 'loopback_base' is undefined\n\nThe error appears to be in '/home/acarr/Documents/cnit381-final-AP/network-automation-final/playbooks/03_eigrp_config.yml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Configure loopback interfaces\n      ^ here\n"}
+2025-12-18 17:51:19,014 p=141868 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:51:19,015 p=141868 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:51:19,015 p=141868 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:57:36,906 p=142468 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 17:57:36,906 p=142468 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 17:57:36,906 p=142468 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 17:57:36,910 p=142468 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 17:57:37,577 p=142468 u=acarr n=ansible | PLAY [Configure VLANs and trunking] ****************************************************************************************************************************************************************************
+2025-12-18 17:57:37,587 p=142468 u=acarr n=ansible | TASK [Create VLANs] ********************************************************************************************************************************************************************************************
+2025-12-18 17:57:38,458 p=142468 u=acarr n=ansible | network_os is set to ios
+2025-12-18 17:57:38,459 p=142468 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 17:57:38,465 p=142494 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 17:57:38,477 p=142494 u=acarr n=p=142494 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 17:57:39,307 p=142494 u=acarr n=p=142494 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 17:57:41,975 p=142468 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 17:57:41,976 p=142468 u=acarr n=ansible | changed: [switch1]
+2025-12-18 17:57:41,985 p=142468 u=acarr n=ansible | TASK [Configure trunk to Router1] ******************************************************************************************************************************************************************************
+2025-12-18 17:57:43,748 p=142468 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "module_stderr": "switchport mode trunk\r\nswitchport mode trunk\r\n      ^\r\n% Invalid input detected at '^' marker.\r\n\r\nswitch1(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 17:57:43,754 p=142468 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 17:57:43,754 p=142468 u=acarr n=ansible | switch1                    : ok=1    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 17:57:43,852 p=142494 u=acarr n=ansible | shutdown complete
+2025-12-18 18:08:30,315 p=143167 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:08:30,315 p=143167 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:08:30,315 p=143167 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:08:30,319 p=143167 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:08:31,006 p=143167 u=acarr n=ansible | PLAY [Apply base configuration] ********************************************************************************************************************************************************************************
+2025-12-18 18:08:31,033 p=143167 u=acarr n=ansible | TASK [Set hostname] ********************************************************************************************************************************************************************************************
+2025-12-18 18:08:32,031 p=143167 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:08:32,032 p=143167 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:08:32,036 p=143167 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:08:32,036 p=143167 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:08:32,039 p=143198 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:08:32,045 p=143195 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:08:32,049 p=143198 u=acarr n=p=143198 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 18:08:32,057 p=143195 u=acarr n=p=143195 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:08:32,077 p=143167 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:08:32,077 p=143167 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:08:32,087 p=143201 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:08:32,102 p=143201 u=acarr n=p=143201 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:08:32,643 p=143198 u=acarr n=p=143198 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 18:08:32,647 p=143195 u=acarr n=p=143195 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 18:08:32,971 p=143201 u=acarr n=p=143201 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 18:08:34,022 p=143167 u=acarr n=ansible | ok: [router2]
+2025-12-18 18:08:34,680 p=143167 u=acarr n=ansible | ok: [switch1]
+2025-12-18 18:08:34,735 p=143167 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 18:08:34,736 p=143167 u=acarr n=ansible | changed: [router1]
+2025-12-18 18:08:34,749 p=143167 u=acarr n=ansible | TASK [Configure MOTD banner] ***********************************************************************************************************************************************************************************
+2025-12-18 18:08:36,410 p=143167 u=acarr n=ansible | changed: [router2]
+2025-12-18 18:08:36,422 p=143167 u=acarr n=ansible | changed: [router1]
+2025-12-18 18:08:36,864 p=143167 u=acarr n=ansible | changed: [switch1]
+2025-12-18 18:08:36,891 p=143167 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:08:36,891 p=143167 u=acarr n=ansible | router1                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:08:36,892 p=143167 u=acarr n=ansible | router2                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:08:36,892 p=143167 u=acarr n=ansible | switch1                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:08:36,990 p=143198 u=acarr n=ansible | shutdown complete
+2025-12-18 18:08:36,990 p=143201 u=acarr n=ansible | shutdown complete
+2025-12-18 18:08:36,991 p=143195 u=acarr n=ansible | shutdown complete
+2025-12-18 18:09:50,877 p=143542 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:09:50,877 p=143542 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:09:50,877 p=143542 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:09:50,881 p=143542 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:09:51,656 p=143542 u=acarr n=ansible | PLAY [Configure network services] ******************************************************************************************************************************************************************************
+2025-12-18 18:09:51,674 p=143542 u=acarr n=ansible | TASK [Configure NTP] *******************************************************************************************************************************************************************************************
+2025-12-18 18:09:52,882 p=143542 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:09:52,883 p=143542 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:09:52,883 p=143542 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:09:52,883 p=143542 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:09:52,892 p=143585 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:09:52,894 p=143586 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:09:52,900 p=143585 u=acarr n=p=143585 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 18:09:52,907 p=143586 u=acarr n=p=143586 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:09:52,936 p=143542 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:09:52,936 p=143542 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:09:52,945 p=143594 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:09:52,954 p=143594 u=acarr n=p=143594 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:09:53,466 p=143585 u=acarr n=p=143585 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 18:09:53,474 p=143586 u=acarr n=p=143586 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 18:09:53,785 p=143594 u=acarr n=p=143594 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 18:09:54,763 p=143542 u=acarr n=ansible | ok: [router2]
+2025-12-18 18:09:55,034 p=143542 u=acarr n=ansible | ok: [router1]
+2025-12-18 18:09:55,480 p=143542 u=acarr n=ansible | ok: [switch1]
+2025-12-18 18:09:55,490 p=143542 u=acarr n=ansible | TASK [Configure logging buffer] ********************************************************************************************************************************************************************************
+2025-12-18 18:09:57,254 p=143542 u=acarr n=ansible | ok: [router2]
+2025-12-18 18:09:57,255 p=143542 u=acarr n=ansible | ok: [router1]
+2025-12-18 18:09:57,699 p=143542 u=acarr n=ansible | ok: [switch1]
+2025-12-18 18:09:57,751 p=143542 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:09:57,751 p=143542 u=acarr n=ansible | router1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:09:57,751 p=143542 u=acarr n=ansible | router2                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:09:57,751 p=143542 u=acarr n=ansible | switch1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:09:57,850 p=143585 u=acarr n=ansible | shutdown complete
+2025-12-18 18:09:57,851 p=143586 u=acarr n=ansible | shutdown complete
+2025-12-18 18:09:57,852 p=143594 u=acarr n=ansible | shutdown complete
+2025-12-18 18:16:04,210 p=144313 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:16:04,210 p=144313 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:16:04,210 p=144313 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:16:04,215 p=144313 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:16:04,889 p=144313 u=acarr n=ansible | PLAY [Configure VLANs and trunking] ****************************************************************************************************************************************************************************
+2025-12-18 18:16:04,902 p=144313 u=acarr n=ansible | TASK [Create VLANs] ********************************************************************************************************************************************************************************************
+2025-12-18 18:16:05,752 p=144313 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:16:05,753 p=144313 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:16:05,759 p=144337 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:16:05,770 p=144337 u=acarr n=p=144337 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:16:06,625 p=144337 u=acarr n=p=144337 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 18:16:09,291 p=144313 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 18:16:09,291 p=144313 u=acarr n=ansible | changed: [switch1]
+2025-12-18 18:16:09,300 p=144313 u=acarr n=ansible | TASK [Configure trunk to Router1] ******************************************************************************************************************************************************************************
+2025-12-18 18:16:11,588 p=144313 u=acarr n=ansible | changed: [switch1]
+2025-12-18 18:16:11,601 p=144313 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:16:11,601 p=144313 u=acarr n=ansible | switch1                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:16:11,700 p=144337 u=acarr n=ansible | shutdown complete
+2025-12-18 18:19:32,172 p=144694 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:19:32,172 p=144694 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:19:32,172 p=144694 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:19:32,176 p=144694 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:19:32,865 p=144694 u=acarr n=ansible | PLAY [Backup device configurations] ****************************************************************************************************************************************************************************
+2025-12-18 18:19:32,882 p=144694 u=acarr n=ansible | TASK [Get running configuration] *******************************************************************************************************************************************************************************
+2025-12-18 18:19:33,894 p=144694 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:19:33,894 p=144694 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:19:33,903 p=144725 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:19:33,915 p=144725 u=acarr n=p=144725 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 18:19:33,923 p=144694 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:19:33,923 p=144694 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:19:33,933 p=144731 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:19:33,936 p=144694 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:19:33,936 p=144694 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:19:33,942 p=144731 u=acarr n=p=144731 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:19:33,949 p=144728 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:19:33,961 p=144728 u=acarr n=p=144728 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:19:34,483 p=144725 u=acarr n=p=144725 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 18:19:34,505 p=144731 u=acarr n=p=144731 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 18:19:34,834 p=144728 u=acarr n=p=144728 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 18:19:35,845 p=144694 u=acarr n=ansible | ok: [router2]
+2025-12-18 18:19:36,080 p=144694 u=acarr n=ansible | ok: [router1]
+2025-12-18 18:19:36,501 p=144694 u=acarr n=ansible | ok: [switch1]
+2025-12-18 18:19:36,515 p=144694 u=acarr n=ansible | TASK [Save configuration to file] ******************************************************************************************************************************************************************************
+2025-12-18 18:19:37,987 p=144694 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "checksum": "168a612924011ab013e67c31b48d7c59accc2264", "msg": "Destination directory backups does not exist"}
+2025-12-18 18:19:37,987 p=144694 u=acarr n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "checksum": "342a0326e59c3b80a6589289a8709d62c014fd62", "msg": "Destination directory backups does not exist"}
+2025-12-18 18:19:37,992 p=144694 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "checksum": "bde90f5106874a43f8a6c71f8bbd1e3524c115a8", "msg": "Destination directory backups does not exist"}
+2025-12-18 18:19:37,995 p=144694 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:19:37,995 p=144694 u=acarr n=ansible | router1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:19:37,995 p=144694 u=acarr n=ansible | router2                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:19:37,995 p=144694 u=acarr n=ansible | switch1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:19:38,093 p=144725 u=acarr n=ansible | shutdown complete
+2025-12-18 18:19:38,094 p=144731 u=acarr n=ansible | shutdown complete
+2025-12-18 18:19:38,094 p=144728 u=acarr n=ansible | shutdown complete
+2025-12-18 18:26:11,321 p=145307 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:26:11,322 p=145307 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:26:11,322 p=145307 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:26:11,325 p=145307 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:26:12,017 p=145307 u=acarr n=ansible | PLAY [Backup device configurations] ****************************************************************************************************************************************************************************
+2025-12-18 18:26:12,037 p=145307 u=acarr n=ansible | TASK [Get running configuration] *******************************************************************************************************************************************************************************
+2025-12-18 18:26:13,029 p=145307 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:26:13,029 p=145307 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:26:13,038 p=145338 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:26:13,046 p=145338 u=acarr n=p=145338 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:26:13,057 p=145307 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:26:13,057 p=145307 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:26:13,061 p=145307 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:26:13,062 p=145307 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:26:13,066 p=145341 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:26:13,069 p=145344 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:26:13,075 p=145341 u=acarr n=p=145341 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 18:26:13,080 p=145344 u=acarr n=p=145344 u=acarr | paramiko [10.10.99.2] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:26:13,657 p=145338 u=acarr n=p=145338 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 18:26:13,661 p=145341 u=acarr n=p=145341 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 18:26:13,714 p=145344 u=acarr n=p=145344 u=acarr | paramiko [10.10.99.2] | Authentication (password) successful!
+2025-12-18 18:26:14,982 p=145307 u=acarr n=ansible | ok: [router2]
+2025-12-18 18:26:15,196 p=145307 u=acarr n=ansible | ok: [router1]
+2025-12-18 18:26:15,403 p=145307 u=acarr n=ansible | ok: [switch1]
+2025-12-18 18:26:15,414 p=145307 u=acarr n=ansible | TASK [Save configuration to file] ******************************************************************************************************************************************************************************
+2025-12-18 18:26:16,877 p=145307 u=acarr n=ansible | changed: [router1]
+2025-12-18 18:26:16,877 p=145307 u=acarr n=ansible | changed: [router2]
+2025-12-18 18:26:16,877 p=145307 u=acarr n=ansible | changed: [switch1]
+2025-12-18 18:26:16,902 p=145307 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:26:16,902 p=145307 u=acarr n=ansible | router1                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:26:16,902 p=145307 u=acarr n=ansible | router2                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:26:16,902 p=145307 u=acarr n=ansible | switch1                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:26:17,000 p=145341 u=acarr n=ansible | shutdown complete
+2025-12-18 18:26:17,000 p=145338 u=acarr n=ansible | shutdown complete
+2025-12-18 18:26:17,001 p=145344 u=acarr n=ansible | shutdown complete
+2025-12-18 18:31:31,168 p=145966 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:31:31,168 p=145966 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:31:31,168 p=145966 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:31:31,172 p=145966 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:31:31,971 p=145966 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 18:31:31,986 p=145966 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 18:31:32,003 p=145966 u=acarr n=ansible | fatal: [router1]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'loopback_base' is undefined. 'loopback_base' is undefined\n\nThe error appears to be in '/home/acarr/Documents/cnit381-final-AP/network-automation-final/playbooks/03_eigrp_config.yml': line 14, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Configure loopback interfaces\n      ^ here\n"}
+2025-12-18 18:31:32,008 p=145966 u=acarr n=ansible | fatal: [router2]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'loopback_base' is undefined. 'loopback_base' is undefined\n\nThe error appears to be in '/home/acarr/Documents/cnit381-final-AP/network-automation-final/playbooks/03_eigrp_config.yml': line 14, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Configure loopback interfaces\n      ^ here\n"}
+2025-12-18 18:31:32,009 p=145966 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:31:32,009 p=145966 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:31:32,009 p=145966 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:33:33,534 p=146119 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:33:33,534 p=146119 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:33:33,534 p=146119 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:33:33,538 p=146119 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:33:34,257 p=146119 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 18:33:34,273 p=146119 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 18:33:35,306 p=146119 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:33:35,306 p=146119 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:33:35,313 p=146183 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:33:35,321 p=146183 u=acarr n=p=146183 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 18:33:35,348 p=146119 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:33:35,348 p=146119 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:33:35,356 p=146186 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:33:35,368 p=146186 u=acarr n=p=146186 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:33:35,906 p=146183 u=acarr n=p=146183 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 18:33:35,928 p=146186 u=acarr n=p=146186 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 18:33:37,308 p=146119 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.102.1 255.255.255.255\r\nip address 10.10.102.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nrouter2(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 18:33:37,604 p=146119 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "module_stderr": "ip address 10.10.101.1 255.255.255.255\r\nip address 10.10.101.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nrouter1(config)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}
+2025-12-18 18:33:37,606 p=146119 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:33:37,606 p=146119 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:33:37,606 p=146119 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:33:37,705 p=146183 u=acarr n=ansible | shutdown complete
+2025-12-18 18:33:37,705 p=146186 u=acarr n=ansible | shutdown complete
+2025-12-18 18:46:27,530 p=147073 u=acarr n=ansible | ansible-playbook [core 2.14.18]
+  config file = /home/acarr/Documents/cnit381-final-AP/network-automation-final/ansible.cfg
+  configured module search path = ['/home/acarr/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/acarr/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0] (/usr/bin/python3)
+  jinja version = 3.1.2
+  libyaml = True
+2025-12-18 18:46:27,530 p=147073 u=acarr n=ansible | Using /home/acarr/Documents/cnit381-final-AP/network-automation-final/ansible.cfg as config file
+2025-12-18 18:46:27,553 p=147073 u=acarr n=ansible | host_list declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:46:27,553 p=147073 u=acarr n=ansible | script declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:46:27,553 p=147073 u=acarr n=ansible | auto declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:46:27,553 p=147073 u=acarr n=ansible | yaml declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:46:27,556 p=147073 u=acarr n=ansible | toml declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:46:27,556 p=147073 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:46:27,556 p=147073 u=acarr n=ansible |   File "/usr/lib/python3/dist-packages/ansible/inventory/manager.py", line 293, in parse_source
+    plugin.parse(self._inventory, self._loader, source, cache=cache)
+  File "/usr/lib/python3/dist-packages/ansible/plugins/inventory/ini.py", line 137, in parse
+    raise AnsibleParserError(e)
+
+2025-12-18 18:46:27,556 p=147073 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:46:27,557 p=147073 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:46:27,564 p=147073 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:46:28,414 p=147073 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:46:28,416 p=147073 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:46:28,443 p=147073 u=acarr n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2025-12-18 18:46:28,443 p=147073 u=acarr n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2025-12-18 18:46:28,443 p=147073 u=acarr n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2025-12-18 18:46:28,443 p=147073 u=acarr n=ansible | PLAYBOOK: 03_eigrp_config.yml **********************************************************************************************************************************************************************************
+2025-12-18 18:46:28,443 p=147073 u=acarr n=ansible | 1 plays in playbooks/03_eigrp_config.yml
+2025-12-18 18:46:28,445 p=147073 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 18:46:28,463 p=147073 u=acarr n=ansible | TASK [Configure loopback interfaces] ***************************************************************************************************************************************************************************
+2025-12-18 18:46:28,476 p=147073 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:46:28,483 p=147073 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:46:28,502 p=147073 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:28,505 p=147073 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:28,509 p=147073 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:28,513 p=147073 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:46:28,513 p=147073 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:28,522 p=147073 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:46:29,588 p=147112 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:46:29,596 p=147115 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:46:29,611 p=147112 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:29,616 p=147112 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:29,619 p=147115 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:29,623 p=147115 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:29,720 p=147073 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:46:29,720 p=147073 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:46:29,720 p=147073 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:46:29,720 p=147073 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:29,721 p=147073 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:29,724 p=147073 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:46:29,729 p=147112 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:46:29,730 p=147112 u=acarr n=ansible | <10.10.99.1> ESTABLISH PARAMIKO SSH CONNECTION FOR USER: ansible on PORT 22 TO 10.10.99.1
+2025-12-18 18:46:29,734 p=147073 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:46:29,734 p=147073 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:46:29,734 p=147073 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:46:29,734 p=147073 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:29,734 p=147073 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:46:29,738 p=147073 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:46:29,739 p=147112 u=acarr n=p=147112 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:46:29,743 p=147115 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:46:29,743 p=147115 u=acarr n=ansible | <10.10.99.3> ESTABLISH PARAMIKO SSH CONNECTION FOR USER: ansible on PORT 22 TO 10.10.99.3
+2025-12-18 18:46:29,753 p=147115 u=acarr n=p=147115 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 18:46:30,313 p=147112 u=acarr n=p=147112 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 18:46:30,319 p=147115 u=acarr n=p=147115 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 18:46:31,709 p=147115 u=acarr n=ansible | Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/ansible/utils/jsonrpc.py", line 46, in handle_request
+    result = rpc_method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/cliconf_base.py", line 37, in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/cisco/ios/plugins/cliconf/ios.py", line 330, in edit_config
+    results.append(self.send_command(**line))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/cliconf_base.py", line 146, in send_command
+    resp = self._connection.send(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 341, in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 1056, in send
+    response = self.receive(
+               ^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 1005, in receive
+    response = self.receive_paramiko(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 863, in receive_paramiko
+    raise AnsibleConnectionFailure(errored_response)
+ansible.errors.AnsibleConnectionFailure: ip address 10.10.102.1 255.255.255.255
+ip address 10.10.102.1 255.255.255.255
+          ^
+% Invalid input detected at '^' marker.
+
+router2(config)#
+
+2025-12-18 18:46:31,711 p=147073 u=acarr n=ansible | fatal: [router2]: FAILED! => {
+    "changed": false,
+    "module_stderr": "ip address 10.10.102.1 255.255.255.255\r\nip address 10.10.102.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nrouter2(config)#",
+    "module_stdout": "",
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"
+}
+2025-12-18 18:46:31,970 p=147112 u=acarr n=ansible | Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/ansible/utils/jsonrpc.py", line 46, in handle_request
+    result = rpc_method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/cliconf_base.py", line 37, in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/cisco/ios/plugins/cliconf/ios.py", line 330, in edit_config
+    results.append(self.send_command(**line))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/cliconf_base.py", line 146, in send_command
+    resp = self._connection.send(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 341, in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 1056, in send
+    response = self.receive(
+               ^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 1005, in receive
+    response = self.receive_paramiko(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 863, in receive_paramiko
+    raise AnsibleConnectionFailure(errored_response)
+ansible.errors.AnsibleConnectionFailure: ip address 10.10.101.1 255.255.255.255
+ip address 10.10.101.1 255.255.255.255
+          ^
+% Invalid input detected at '^' marker.
+
+router1(config)#
+
+2025-12-18 18:46:31,972 p=147073 u=acarr n=ansible | fatal: [router1]: FAILED! => {
+    "changed": false,
+    "module_stderr": "ip address 10.10.101.1 255.255.255.255\r\nip address 10.10.101.1 255.255.255.255\r\n          ^\r\n% Invalid input detected at '^' marker.\r\n\r\nrouter1(config)#",
+    "module_stdout": "",
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"
+}
+2025-12-18 18:46:31,974 p=147073 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:46:31,974 p=147073 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:46:31,975 p=147073 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:46:32,073 p=147115 u=acarr n=ansible | shutdown complete
+2025-12-18 18:46:32,074 p=147112 u=acarr n=ansible | shutdown complete
+2025-12-18 18:58:27,717 p=148000 u=acarr n=ansible | ansible-playbook [core 2.14.18]
+  config file = /home/acarr/Documents/cnit381-final-AP/network-automation-final/ansible.cfg
+  configured module search path = ['/home/acarr/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/acarr/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0] (/usr/bin/python3)
+  jinja version = 3.1.2
+  libyaml = True
+2025-12-18 18:58:27,718 p=148000 u=acarr n=ansible | Using /home/acarr/Documents/cnit381-final-AP/network-automation-final/ansible.cfg as config file
+2025-12-18 18:58:27,741 p=148000 u=acarr n=ansible | host_list declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:58:27,741 p=148000 u=acarr n=ansible | script declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:58:27,741 p=148000 u=acarr n=ansible | auto declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:58:27,741 p=148000 u=acarr n=ansible | yaml declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:58:27,743 p=148000 u=acarr n=ansible | toml declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 18:58:27,743 p=148000 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 18:58:27,743 p=148000 u=acarr n=ansible |   File "/usr/lib/python3/dist-packages/ansible/inventory/manager.py", line 293, in parse_source
+    plugin.parse(self._inventory, self._loader, source, cache=cache)
+  File "/usr/lib/python3/dist-packages/ansible/plugins/inventory/ini.py", line 137, in parse
+    raise AnsibleParserError(e)
+
+2025-12-18 18:58:27,743 p=148000 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 18:58:27,744 p=148000 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 18:58:27,749 p=148000 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 18:58:28,517 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:28,520 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:28,520 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:28,521 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:28,549 p=148000 u=acarr n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2025-12-18 18:58:28,549 p=148000 u=acarr n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2025-12-18 18:58:28,549 p=148000 u=acarr n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2025-12-18 18:58:28,549 p=148000 u=acarr n=ansible | PLAYBOOK: 03_eigrp_config.yml **********************************************************************************************************************************************************************************
+2025-12-18 18:58:28,549 p=148000 u=acarr n=ansible | 1 plays in playbooks/03_eigrp_config.yml
+2025-12-18 18:58:28,551 p=148000 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 18:58:28,570 p=148000 u=acarr n=ansible | TASK [Configure loopback1] *************************************************************************************************************************************************************************************
+2025-12-18 18:58:28,582 p=148000 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:28,589 p=148000 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:28,604 p=148000 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:28,607 p=148000 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:28,614 p=148000 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:58:28,614 p=148000 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:28,621 p=148000 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:28,625 p=148000 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:58:29,609 p=148029 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:29,631 p=148029 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:29,634 p=148032 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:29,637 p=148029 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:29,657 p=148032 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:29,662 p=148032 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:29,726 p=148000 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:58:29,726 p=148000 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:58:29,726 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:29,726 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:29,727 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:29,729 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:29,734 p=148029 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:58:29,734 p=148029 u=acarr n=ansible | <10.10.99.3> ESTABLISH PARAMIKO SSH CONNECTION FOR USER: ansible on PORT 22 TO 10.10.99.3
+2025-12-18 18:58:29,744 p=148029 u=acarr n=p=148029 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 18:58:29,759 p=148000 u=acarr n=ansible | network_os is set to ios
+2025-12-18 18:58:29,759 p=148000 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 18:58:29,759 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:29,759 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:29,760 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:29,763 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:29,768 p=148032 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 18:58:29,768 p=148032 u=acarr n=ansible | <10.10.99.1> ESTABLISH PARAMIKO SSH CONNECTION FOR USER: ansible on PORT 22 TO 10.10.99.1
+2025-12-18 18:58:29,777 p=148032 u=acarr n=p=148032 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 18:58:30,297 p=148029 u=acarr n=p=148029 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 18:58:30,332 p=148032 u=acarr n=p=148032 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 18:58:31,911 p=148000 u=acarr n=ansible | ok: [router1] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.101.1 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback1"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 18:58:32,025 p=148000 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 18:58:32,025 p=148000 u=acarr n=ansible | changed: [router2] => {
+    "banners": {},
+    "changed": true,
+    "commands": [
+        "interface Loopback1",
+        "ip address 10.10.102.1 255.255.255.255"
+    ],
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.102.1 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback1"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    },
+    "updates": [
+        "interface Loopback1",
+        "ip address 10.10.102.1 255.255.255.255"
+    ]
+}
+2025-12-18 18:58:32,027 p=148000 u=acarr n=ansible | TASK [Configure loopback2] *************************************************************************************************************************************************************************************
+2025-12-18 18:58:32,039 p=148000 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:32,046 p=148000 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:32,063 p=148000 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:32,067 p=148000 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:32,073 p=148000 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:32,076 p=148000 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:58:32,077 p=148000 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:32,084 p=148000 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:58:33,127 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:33,127 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:33,128 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:33,131 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:33,178 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:33,178 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:33,178 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:33,182 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:33,433 p=148000 u=acarr n=ansible | ok: [router1] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.101.2 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback2"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 18:58:33,936 p=148000 u=acarr n=ansible | changed: [router2] => {
+    "banners": {},
+    "changed": true,
+    "commands": [
+        "interface Loopback2",
+        "ip address 10.10.102.2 255.255.255.255"
+    ],
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.102.2 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback2"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    },
+    "updates": [
+        "interface Loopback2",
+        "ip address 10.10.102.2 255.255.255.255"
+    ]
+}
+2025-12-18 18:58:33,940 p=148000 u=acarr n=ansible | TASK [Configure Loopback3] *************************************************************************************************************************************************************************************
+2025-12-18 18:58:33,953 p=148000 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:33,959 p=148000 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:33,972 p=148000 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:33,977 p=148000 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:33,982 p=148000 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:33,985 p=148000 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:58:33,987 p=148000 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:33,994 p=148000 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:58:35,048 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:35,048 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:35,049 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:35,052 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:35,061 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:35,062 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:35,063 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:35,068 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:35,384 p=148000 u=acarr n=ansible | ok: [router1] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.101.3 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback3"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 18:58:35,802 p=148000 u=acarr n=ansible | changed: [router2] => {
+    "banners": {},
+    "changed": true,
+    "commands": [
+        "interface Loopback3",
+        "ip address 10.10.102.3 255.255.255.255"
+    ],
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.102.3 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback3"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    },
+    "updates": [
+        "interface Loopback3",
+        "ip address 10.10.102.3 255.255.255.255"
+    ]
+}
+2025-12-18 18:58:35,805 p=148000 u=acarr n=ansible | TASK [Configure EIGRP AS 100] **********************************************************************************************************************************************************************************
+2025-12-18 18:58:35,818 p=148000 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:35,823 p=148000 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 18:58:35,842 p=148000 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:35,844 p=148000 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:35,847 p=148000 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:35,852 p=148000 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:35,854 p=148000 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:58:35,860 p=148000 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 18:58:36,995 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:36,995 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:36,996 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:36,998 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:36,999 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:36,999 p=148000 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 18:58:37,000 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:37,003 p=148000 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 18:58:37,774 p=148000 u=acarr n=ansible | changed: [router1] => {
+    "banners": {},
+    "changed": true,
+    "commands": [
+        "router eigrp 100",
+        "no auto-summary"
+    ],
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "network 10.10.10.0 0.0.0.3",
+                "network 10.10.101.0 0.0.0.255",
+                "no auto-summary"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "router eigrp 100"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    },
+    "updates": [
+        "router eigrp 100",
+        "no auto-summary"
+    ]
+}
+2025-12-18 18:58:37,875 p=148000 u=acarr n=ansible | changed: [router2] => {
+    "banners": {},
+    "changed": true,
+    "commands": [
+        "router eigrp 100",
+        "network 10.10.102.0 0.0.0.255",
+        "no auto-summary"
+    ],
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "network 10.10.10.0 0.0.0.3",
+                "network 10.10.102.0 0.0.0.255",
+                "no auto-summary"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "router eigrp 100"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    },
+    "updates": [
+        "router eigrp 100",
+        "network 10.10.102.0 0.0.0.255",
+        "no auto-summary"
+    ]
+}
+2025-12-18 18:58:37,893 p=148000 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 18:58:37,893 p=148000 u=acarr n=ansible | router1                    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:58:37,893 p=148000 u=acarr n=ansible | router2                    : ok=4    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 18:58:37,992 p=148032 u=acarr n=ansible | shutdown complete
+2025-12-18 18:58:37,992 p=148029 u=acarr n=ansible | shutdown complete
+2025-12-18 19:03:57,225 p=148501 u=acarr n=ansible | ansible-playbook [core 2.14.18]
+  config file = /home/acarr/Documents/cnit381-final-AP/network-automation-final/ansible.cfg
+  configured module search path = ['/home/acarr/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/acarr/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0] (/usr/bin/python3)
+  jinja version = 3.1.2
+  libyaml = True
+2025-12-18 19:03:57,225 p=148501 u=acarr n=ansible | Using /home/acarr/Documents/cnit381-final-AP/network-automation-final/ansible.cfg as config file
+2025-12-18 19:03:57,249 p=148501 u=acarr n=ansible | host_list declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 19:03:57,249 p=148501 u=acarr n=ansible | script declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 19:03:57,249 p=148501 u=acarr n=ansible | auto declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 19:03:57,249 p=148501 u=acarr n=ansible | yaml declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 19:03:57,251 p=148501 u=acarr n=ansible | toml declined parsing /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as it did not pass its verify_file() method
+2025-12-18 19:03:57,251 p=148501 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 19:03:57,251 p=148501 u=acarr n=ansible |   File "/usr/lib/python3/dist-packages/ansible/inventory/manager.py", line 293, in parse_source
+    plugin.parse(self._inventory, self._loader, source, cache=cache)
+  File "/usr/lib/python3/dist-packages/ansible/plugins/inventory/ini.py", line 137, in parse
+    raise AnsibleParserError(e)
+
+2025-12-18 19:03:57,251 p=148501 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 19:03:57,251 p=148501 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 19:03:57,259 p=148501 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 19:03:58,008 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:03:58,011 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:03:58,011 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:03:58,012 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:03:58,039 p=148501 u=acarr n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2025-12-18 19:03:58,039 p=148501 u=acarr n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2025-12-18 19:03:58,039 p=148501 u=acarr n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2025-12-18 19:03:58,039 p=148501 u=acarr n=ansible | PLAYBOOK: 03_eigrp_config.yml **********************************************************************************************************************************************************************************
+2025-12-18 19:03:58,039 p=148501 u=acarr n=ansible | 1 plays in playbooks/03_eigrp_config.yml
+2025-12-18 19:03:58,040 p=148501 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 19:03:58,057 p=148501 u=acarr n=ansible | TASK [Configure loopback1] *************************************************************************************************************************************************************************************
+2025-12-18 19:03:58,070 p=148501 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:03:58,079 p=148501 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:03:58,099 p=148501 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:58,101 p=148501 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:58,102 p=148501 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:58,107 p=148501 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:58,113 p=148501 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 19:03:58,118 p=148501 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 19:03:59,072 p=148545 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:03:59,080 p=148548 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:03:59,094 p=148545 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:59,100 p=148545 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:59,103 p=148548 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:59,108 p=148548 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:59,194 p=148501 u=acarr n=ansible | network_os is set to ios
+2025-12-18 19:03:59,194 p=148501 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 19:03:59,194 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:03:59,194 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:59,195 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:59,198 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:03:59,203 p=148545 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 19:03:59,203 p=148545 u=acarr n=ansible | <10.10.99.3> ESTABLISH PARAMIKO SSH CONNECTION FOR USER: ansible on PORT 22 TO 10.10.99.3
+2025-12-18 19:03:59,203 p=148501 u=acarr n=ansible | network_os is set to ios
+2025-12-18 19:03:59,204 p=148501 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 19:03:59,204 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:03:59,204 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:59,204 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:03:59,208 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:03:59,212 p=148545 u=acarr n=p=148545 u=acarr | paramiko [10.10.99.3] | Connected (version 1.99, client Cisco-1.25)
+2025-12-18 19:03:59,214 p=148548 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 19:03:59,214 p=148548 u=acarr n=ansible | <10.10.99.1> ESTABLISH PARAMIKO SSH CONNECTION FOR USER: ansible on PORT 22 TO 10.10.99.1
+2025-12-18 19:03:59,224 p=148548 u=acarr n=p=148548 u=acarr | paramiko [10.10.99.1] | Connected (version 2.0, client Cisco-1.25)
+2025-12-18 19:03:59,773 p=148545 u=acarr n=p=148545 u=acarr | paramiko [10.10.99.3] | Authentication (password) successful!
+2025-12-18 19:03:59,787 p=148548 u=acarr n=p=148548 u=acarr | paramiko [10.10.99.1] | Authentication (password) successful!
+2025-12-18 19:04:01,038 p=148501 u=acarr n=ansible | ok: [router2] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.102.1 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback1"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 19:04:01,316 p=148501 u=acarr n=ansible | ok: [router1] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.101.1 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback1"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 19:04:01,318 p=148501 u=acarr n=ansible | TASK [Configure loopback2] *************************************************************************************************************************************************************************************
+2025-12-18 19:04:01,329 p=148501 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:04:01,336 p=148501 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:04:01,351 p=148501 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:01,356 p=148501 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:01,361 p=148501 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:01,365 p=148501 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:01,365 p=148501 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 19:04:01,374 p=148501 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 19:04:02,427 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:02,427 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:02,427 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:02,427 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:02,428 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:02,428 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:02,431 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:02,431 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:02,729 p=148501 u=acarr n=ansible | ok: [router1] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.101.2 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback2"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 19:04:02,743 p=148501 u=acarr n=ansible | ok: [router2] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.102.2 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback2"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 19:04:02,746 p=148501 u=acarr n=ansible | TASK [Configure Loopback3] *************************************************************************************************************************************************************************************
+2025-12-18 19:04:02,759 p=148501 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:04:02,769 p=148501 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:04:02,782 p=148501 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:02,787 p=148501 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:02,792 p=148501 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:02,793 p=148501 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 19:04:02,795 p=148501 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:02,805 p=148501 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 19:04:03,752 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:03,752 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:03,752 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:03,752 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:03,753 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:03,753 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:03,757 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:03,757 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:04,058 p=148501 u=acarr n=ansible | ok: [router1] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.101.3 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback3"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 19:04:04,062 p=148501 u=acarr n=ansible | ok: [router2] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "ip address 10.10.102.3 255.255.255.255"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "interface Loopback3"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    }
+}
+2025-12-18 19:04:04,066 p=148501 u=acarr n=ansible | TASK [Configure EIGRP AS 100] **********************************************************************************************************************************************************************************
+2025-12-18 19:04:04,077 p=148501 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:04:04,084 p=148501 u=acarr n=ansible | redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-12-18 19:04:04,099 p=148501 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:04,103 p=148501 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:04,109 p=148501 u=acarr n=ansible | redirecting (type: terminal) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:04,110 p=148501 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 19:04:04,112 p=148501 u=acarr n=ansible | redirecting (type: cliconf) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:04,119 p=148501 u=acarr n=ansible | redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-12-18 19:04:05,142 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:05,143 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:05,143 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:05,146 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:05,175 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:05,176 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:05,176 p=148501 u=acarr n=ansible | redirecting (type: action) ansible.builtin.ios to cisco.ios.ios
+2025-12-18 19:04:05,179 p=148501 u=acarr n=ansible | redirecting (type: modules) ansible.builtin.ios_config to cisco.ios.ios_config
+2025-12-18 19:04:06,006 p=148501 u=acarr n=ansible | [WARNING]: To ensure idempotency and correct diff the input configuration lines should be similar to how they appear if present in the running configuration on device
+
+2025-12-18 19:04:06,006 p=148501 u=acarr n=ansible | changed: [router1] => {
+    "banners": {},
+    "changed": true,
+    "commands": [
+        "router eigrp 100",
+        "network 10.10.99.0 0.0.0.3",
+        "no auto-summary"
+    ],
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "network 10.10.99.0 0.0.0.3",
+                "network 10.10.101.0 0.0.0.255",
+                "no auto-summary"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "router eigrp 100"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    },
+    "updates": [
+        "router eigrp 100",
+        "network 10.10.99.0 0.0.0.3",
+        "no auto-summary"
+    ]
+}
+2025-12-18 19:04:06,062 p=148501 u=acarr n=ansible | changed: [router2] => {
+    "banners": {},
+    "changed": true,
+    "commands": [
+        "router eigrp 100",
+        "network 10.10.99.0 0.0.0.3",
+        "no auto-summary"
+    ],
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "network 10.10.99.0 0.0.0.3",
+                "network 10.10.102.0 0.0.0.255",
+                "no auto-summary"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": [
+                "router eigrp 100"
+            ],
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    },
+    "updates": [
+        "router eigrp 100",
+        "network 10.10.99.0 0.0.0.3",
+        "no auto-summary"
+    ]
+}
+2025-12-18 19:04:06,087 p=148501 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 19:04:06,087 p=148501 u=acarr n=ansible | router1                    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 19:04:06,087 p=148501 u=acarr n=ansible | router2                    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-12-18 19:04:06,186 p=148545 u=acarr n=ansible | shutdown complete
+2025-12-18 19:04:06,186 p=148548 u=acarr n=ansible | shutdown complete
+2025-12-18 19:07:58,379 p=148944 u=acarr n=ansible | [WARNING]:  * Failed to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini with ini plugin: /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini:18:
+Section [router1:vars] not valid for undefined group: router1
+
+2025-12-18 19:07:58,379 p=148944 u=acarr n=ansible | [WARNING]: Unable to parse /home/acarr/Documents/cnit381-final-AP/network-automation-final/inventory.ini as an inventory source
+
+2025-12-18 19:07:58,380 p=148944 u=acarr n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-12-18 19:07:58,385 p=148944 u=acarr n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-12-18 19:07:59,286 p=148944 u=acarr n=ansible | PLAY [Configure EIGRP routing] *********************************************************************************************************************************************************************************
+2025-12-18 19:07:59,306 p=148944 u=acarr n=ansible | TASK [Configure loopback1] *************************************************************************************************************************************************************************************
+2025-12-18 19:08:00,503 p=148944 u=acarr n=ansible | network_os is set to ios
+2025-12-18 19:08:00,503 p=148944 u=acarr n=ansible | network_os is set to ios
+2025-12-18 19:08:00,503 p=148944 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 19:08:00,503 p=148944 u=acarr n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-12-18 19:08:00,513 p=148977 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 19:08:00,514 p=148979 u=acarr n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-12-18 19:08:00,528 p=148944 u=acarr n=ansible | fatal: [router2]: FAILED! => {"changed": false, "msg": "[Errno 101] Network is unreachable"}
+2025-12-18 19:08:00,530 p=148944 u=acarr n=ansible | fatal: [router1]: FAILED! => {"changed": false, "msg": "[Errno 101] Network is unreachable"}
+2025-12-18 19:08:00,532 p=148944 u=acarr n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-12-18 19:08:00,532 p=148944 u=acarr n=ansible | router1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 19:08:00,532 p=148944 u=acarr n=ansible | router2                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-12-18 19:08:00,631 p=148977 u=acarr n=ansible | shutdown complete
+2025-12-18 19:08:00,631 p=148979 u=acarr n=ansible | shutdown complete

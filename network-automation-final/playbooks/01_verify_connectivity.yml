@@ -1,0 +1,15 @@
+---
+- name: Verify connectivity to network devices
+  hosts: switches
+  gather_facts: no
+
+  tasks:
+    - name: Run show version to verify SSH connectivity
+      ios_command:
+        commands:
+          - show version
+      register: show_version_output
+
+    - name: Print show version output
+      debug:
+        msg: "{{ show_version_output.stdout[0] }}"
